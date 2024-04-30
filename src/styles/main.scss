@@ -1,0 +1,87 @@
+@import 'variables-light';
+@import 'variables-dark';
+
+:root {
+  --primary-color: #{$primary-color--light};
+  --primary-color-text: #{$primary-color-text--light};
+  --primary-text-color-dark: #381E72;
+  --background-color: #{$background-color--light};
+  --text-color: #{$text-color--light};
+  --button-hover-color: #{$primary-color-light--light}; // Darker on hover for filled button
+  --border-color: #{$primary-color-light-15--light}; // Consistent with the primary color
+  --overlay-color: #{$primary-color-light-overlay--light}; // Used for hover on outlined and text buttons
+  --primary-tonal: #{$primary-color-light--light}; // Used for tonal button
+  --type1-color: #f0f0f0; // Lightest grey
+  --type2-color: #d9d9d9; // Medium grey
+  --type3-color: #a6a6a6; // Darkest grey
+}
+
+[data-theme="dark"] {
+  --primary-color: #{$primary-color--dark}; // Ensure $primary-color-dark is defined in variables-dark.scss
+  --primary-color-text: #{$primary-color-text--dark};
+  --background-color: #{$background-color--dark};
+  --text-color: #{$text-color--dark};
+  --button-hover-color: #{$primary-color-light--dark};
+  --border-color: #{$primary-color-light-15--dark};
+  --overlay-color: #{$primary-color-light-overlay--dark}; // Check if this should differ in the dark theme
+
+  --dark-background-color: #333;   // Dark grey for card background
+  --dark-text-color: #e0e0e0;      // Light grey for text 
+  --dark-subtext-color: #ccc;      // Subtext color
+  --dark-border-color: #49454F;       // Border color for elements within the card
+  // --dark-border-color: #373737d6;       // Border color for elements within the card
+  --primary-text-color-dark: #381E72;
+  --dark-button-bg: #444;          // Button background color
+  --dark-button-text: #ddd;    
+  
+  --dark-type1-bg: #141218; // Dark grey (Lightest in dark mode)
+  --dark-type2-bg: #1D1B20; // Darker grey
+  --dark-type3-bg: #36343B; // Darkest grey
+}
+
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* A base font size to work with */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit; /* Ensures form elements use the body font */
+}
+
+a {
+  color: inherit; /* Ensures links don't bring their own colors unless specified */
+  text-decoration: none; /* Removes underline from links */
+}
+
+ul,
+ol {
+  list-style: none; /* Removes list styles */
+}
+
+img {
+  max-width: 100%; /* Makes images responsive */
+  height: auto;
+}
+
+/* Helps avoid the "flash of unstyled content" */
+html { 
+  scroll-behavior: smooth; /* Smooth scrolling on link navigation */
+}

@@ -1,0 +1,45 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* A base font size to work with */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit; /* Ensures form elements use the body font */
+}
+
+a {
+  color: inherit; /* Ensures links don't bring their own colors unless specified */
+  text-decoration: none; /* Removes underline from links */
+}
+
+ul,
+ol {
+  list-style: none; /* Removes list styles */
+}
+
+img {
+  max-width: 100%; /* Makes images responsive */
+  height: auto;
+}
+
+/* Helps avoid the "flash of unstyled content" */
+html { 
+  scroll-behavior: smooth; /* Smooth scrolling on link navigation */
+}

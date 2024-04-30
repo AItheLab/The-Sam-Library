@@ -1,0 +1,9 @@
+$background-color--light: #f5f5f5;
+$text-color--light: #333333;
+$primary-color--light: #6750A4;
+$primary-color-text--light: #ffffff;
+$primary-color-dark--light: darken($primary-color--light, 10%);
+$primary-color-light--light: lighten($primary-color--light, 20%);
+$primary-color-light-15--light: lighten($primary-color--light, 15%);
+$primary-color-contrast--light: #ffffff;
+$primary-color-light-overlay--light: rgba(#5f3dc4, 0.1);
