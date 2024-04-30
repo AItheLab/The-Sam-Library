@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import SAMButton from './components/btn/sam-btn.vue'
 import SAMCard from './components/card/sam-card.vue'
+import SAMCalendar from './components/calendar/sam-calendar.vue'
 
 const handleClick = () => {
   console.log('Button clicked')
@@ -119,6 +120,10 @@ const handleRightClick = () => {
         :headerOverImage="true"
       />
 
+    </div>
+
+    <div>
+      <SAMCalendar @date-selected="handleDateSelected" locale="en" theme="light" />
     </div>
     
   </div>
